@@ -1,3 +1,5 @@
 requests
 pyton-dotenv
 websockets
+ccxt
+loguru
