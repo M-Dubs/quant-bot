@@ -1,0 +1,14 @@
+version: "3.9"
+
+services:
+  bot_alpaca:
+    build: ./bot
+    container_name: quantbot_alpaca
+    env_file: .env
+    working_dir: /app
+    volumes:
+      - ./logs:/app/logs
+      - ./bot:/app
+      - ./requirements.txt:/app/requirements.txt:ro
+    command: bash -lc "pip install -r /app/requirements.txt && python -u /app/main_alpaca.py"
+    restart: unless-stopped
