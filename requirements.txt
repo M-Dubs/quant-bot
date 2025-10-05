@@ -1,5 +1,5 @@
-requests
-pyton-dotenv
-websockets
 ccxt
+python-dotenv
 loguru
+alpaca-trade-api
+backoff

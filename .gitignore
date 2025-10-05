@@ -1,0 +1,30 @@
+# env & secrets
+.env
+*.env
+.env.*
+
+# python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pdb
+*.egg-info/
+.venv/
+venv/
+
+# logs & local state
+logs/
+*.log
+*.sqlite
+*.db
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*.bak
+
+# docker
+*.pid
