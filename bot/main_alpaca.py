@@ -7,7 +7,8 @@ from broker_alpaca import client, check_account, place_test_order, cancel_order,
 # --- Logging setup (was in utils.py) ---
 def setup_logging():
     os.makedirs("logs", exist_ok=True)
-    logger.add("logs/quantbot.log", rotation="10 MB", retention="10 files", enqueue=True)
+    # Keep up to 10 rotated log files, each up to 10 MB
+    logger.add("logs/quantbot.log", rotation="10 MB", retention=10, enqueue=True)
 
 def heartbeat():
     with open("logs/heartbeat", "w") as f:
