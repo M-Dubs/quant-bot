@@ -1,0 +1,4 @@
+timeframe: "5Min"
+max_weight_per_symbol: 0.02
+gross_leverage_cap: 1.0
+universe_cap: 800

@@ -29,3 +29,9 @@ Thumbs.db
 # docker
 *.pid
 .env
+
+logs/
+data/
+*.pyc
+__pycache__/
+.env

@@ -1,5 +1,9 @@
-ccxt
-python-dotenv
-loguru
-alpaca-trade-api
-backoff
+alpaca-trade-api>=3.1.0
+pandas>=2.2.2
+numpy>=2.0.0
+loguru>=0.7.2
+python-dotenv>=1.0.1
+backoff>=2.2.1
+pyarrow>=17.0.0
+ccxt>=4.4.17          # optional for later, harmless to include
+pandas_market_calendars>=4.4.1  # optional; we can stick to Alpaca clock for now
